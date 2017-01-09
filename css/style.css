@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
-/*主页的样式*/
+@CHARSET "UFT-8";
+/*主页独立样式表*/
+/*主体*/
 body {background-image: url("../images/bg.jpg");background-position: -300px 0px;}
-#main {margin: 0 auto;padding: 0px;}
