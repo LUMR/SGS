@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+*{margin: 0px auto;padding:0px;}
+body{text-align:center;color:#90683b;background:#ffebd2;font:normal 12px/1.6em Microsoft YaHei,Tahoma,simsun }
+a{color: #90683b; text-decoration: none;}
+a:hover{color:#b52200;}
+img{border:none;}
+ul li{list-style-type: none;}
+.clearfix{clear:both;}
+.fl{ float:left}
+.fr{float:right}
+.font-color{color: #ce8a54}
+
+.wrap{width:100%;max-width:1920px;min-width:1050px;height:auto;
+_width:expression(this.scrollWidth > 1920 ? "1920px" : (this.scrollWidth < 1050? "1050px" : "auto"));
+overflow: hidden;margin: 0 auto;position: relative;background:/*#ffebd2*/ #f6f9fb url('../img/web/bg.jpg') no-repeat center top ;}
+.top-flash{ width:1920px; position:absolute; left:50%; margin-left:-960px; top:0; z-index:2;}
+/*chrom  margin:-2px 0 0 -962px; */
+/*ie margin-left:-960px;*/
+/*貂蝉效果*/
+/*.layout{width:1050px;}*/
+.layout{width:1050px;position:relative; z-index:3;}
+
+/*头部*/
+.toper{width:1050px; height:423px; position: relative;}
+.topmenu{width:100%; height:139px ; background: #000; position:absolute;top:0;left:0;filter:alpha(opacity=10); 
+-moz-opacity:0.1; 
+opacity:0.1;}
+.nav{position:absolute; width:870px; height:110px; top:0px;left:280px; background:url(../img/web/bg.png) no-repeat; background-position:17px -447px;z-index:9999; }
+.nav li {float: left;width:110px; height:139px;position:relative;}
+.nav-link{display:block;height:26px;width:110px;cursor: pointer;}
+.navlist{position:absolute;top:25px;left:10px;width:110px;height:130px;padding-top:10px;overflow:hidden;zoom:1; text-indent: 24px; }
+.topnav-lnk{display:block;width:110px;height:22px;line-height:22px;position:relative;font-family: '宋体'; text-align: left;color: #dbdbdb}
+.topnav-lnk:hover{color:#ffc600;text-decoration:none}
+.current{background: url(../img/web/nav-hover.png) no-repeat 0 0;}
+.new{background: url(../img/web/new.jpg) no-repeat 2px center;}
+.hot{background: url(../img/web/hot.jpg) no-repeat 2px center;}
+
+/*头部广告位*/
+.sgs_act{   float: left;height: 80px;position: relative;right:24px;top: 342px;/*right: 330px;top: 329px;*/width: 240px;}
+.sgs_act_h{float: left;height: 80px;position: relative;right: 21px;top: 85px;width: 240px;}
+/*.sgs_act a , .sgs_act_h a{ width:100px; height:34px; display: block;margin: -31px 0 0 134px;background-color:transparent;background-color:#000; opacity:0;filter:alpha(opacity=0);}*/
+.sgs_act a , .sgs_act_h a{ width:195px; height:55px; display: block;margin: -58px 0 0 23px;background-color:transparent;background-color:#000; opacity:0;filter:alpha(opacity=0);}
+.sgs_notice{ float:left; width:140px; height:20px;position: relative; top: 400px; right:-370px;color:#7ef833;}
+.sgs_notice_h{ float:left; width:140px; height:20px;position: relative; top: 156px; right:-679px;color:#7ef833;}
+.sgs_notices{  width:140px; height:20px;position: relative; top: 400px; right:-450px;+right:-300px;color:#7ef833;}
+/*微信弹出框*/
+.wechat_show {width:156px; height:172px; background:url(../img/web/weixin2.png) no-repeat center center; position: relative; left:190px;*left:170px;*top:-100px; top:310px; z-index: 999999; display:none;  }
+.nav_wechat{width:244px; height:244px; background:url(../img/web/nav_wechat.png) no-repeat center center; position: relative; left:430px; top:130px;*left:240px;z-index: 999999; display:none;}
+
+.close{width:40px; height:40px; cursor: pointer;}
+
+.mainer{width:1050px; height:auto;}
+
+
+/*页脚*/
+
+
+.copyright{ padding:30px 0 ; /*overflow:hidden;*/ color:#333;}
+.copyright .main{ width:1050px; margin:0 auto; overflow:hidden;padding-top:10px;}
+.copyright img{ margin-right:8px; vertical-align:middle;}
+.copyright .lines{ width:1px; height:25px; border-left:1px solid #b2b2b2; margin-right:8px; vertical-align:middle; display:inline-block;}
+.copyright-left{ width:325px; padding-top:10px; float:left;}
+.copyright-text{ width:666px; border-left:1px solid #b2b2b2; font-size:12px; padding-left:16px; line-height:18px; float:left;text-align: left;}
+.copyright-text span{ color:#333; padding:0 4px;}
+.copy-gs img{ width:40px;}
