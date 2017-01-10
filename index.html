@@ -9,10 +9,12 @@
 </head>
 <body>
 <div id="main">
+	<!-- 顶部标题栏 -->
 	<div class="header">
 		<img src="images/logo.png">
 		<div class="header_ul">
-			<h2>官网首页</h2> </div>
+			<a href="http://www.sanguosha.com"><h2>官网首页</h2></a>
+		</div>
 		<div class="header_ul">
 			<h2>新手教程</h2>	
 			<a href="" class="hot"><p>新手教学</p></a>
@@ -54,13 +56,73 @@
 			<a href=""><p>官方微信</p></a>
 		</div>
 	</div>
+
+	<!-- 中部内容 -->
+	<div class="midle">
+		<!-- 左侧快速连接 -->
+		<div class="quicklink">
+			<div class="start_game">
+				<a href="" title="开始游戏"></a>
+			</div>
+			<div class="link class">
+				<a href="" title="新手教学"></a>
+			</div>
+			<div class="link reg">
+				<a href="" title="新人注册"></a>
+			</div>
+			<div class="link download">
+				<a href="" title="游戏下载"></a>
+			</div>
+			<div class="link active">
+				<a href="" title="活动中心"></a>
+			</div>
+			<div class="quicklink_s">
+				<ul>
+					<li><a href="">实名认证</a></li>
+					<li><a href="">密码修改</a></li>
+					<li><a href="">信息举报</a></li>
+					<li><a href="">用户协议</a></li>
+					<li><a href="">防沉迷指南</a></li>
+					<li><a href="">家长监护</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 中间滑动图片部分 -->
+		<div class="lightbox">
+			<ul id="media">
+				<li><a href=""><img src="images/p1.jpg"></a></li>
+				<li><a href=""><img src="images/p2.png"></a></li>
+				<li><a href=""><img src="images/p3.jpg"></a></li>
+				<li><a href=""><img src="images/p4.png"></a></li>
+				<li><a href=""><img src="images/p5.png"></a></li>
+			</ul>
+		</div>
+		<!-- 右侧新闻公告部分 -->
+		<div class="news">
+			<div class="news_title">
+				<ul>
+					<li><a href="">最新</a></li>
+					<li><a href="">咨询</a></li>
+					<li><a href="">活动</a></li>
+					<li><a href="">公告</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="news_main">
+				<a href="" class="up_hot">《三国杀ol》10月4号更新公告</a>
+				<hr>
+				<ul>
+					<li><a href=""><span>[公告] 《三国杀OL》1月10日2.84版本更新公告</span><span>01-09</span></a></li>
+					<li><a href=""><span>[公告] 游卡通行证安全手机绑定攻略</span><span>01-09</span></a></li>
+					<li><a href=""><span>[活动] 1月10日刘禅 鲁肃 张郃 荀攸特惠</span><span>01-09</span></a></li>
+					<li><a href=""><span>[资讯] “三国杀校园行”寒假4V4排位赛报名开启</span><span>01-09</span></a></li>
+					<li><a href=""><span>[资讯] 超级杯选手专访——那半个颜色鲜明的橙子</span><span>01-09</span></a></li>
+					<li><a href=""><span>[公告] 9区排行榜异常公告</span><span>01-09</span></a></li>
+					<li><a href=""><span>[资讯] 三国杀-寻找最初的感动</span><span>01-09</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
-<script type="text/javascript">
-	var header = document.getElementsByClassName('header_ul');
-	for (var i = 0; i < header.length; i++) {
-		header[i].setAttribute("onmouseover","header_hover(this)");
-		header[i].setAttribute("onmouseout","header_hout(this)");
-	}
-</script>
 </body>
 </html>

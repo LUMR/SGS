@@ -1,16 +1,18 @@
 @CHARSET "UTF-8";
 /*公共样式表*/
-#main {margin: 0 auto;padding: 0px;width: 1300px;}
-body {font:normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;}
+body {font:normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;margin: 0px auto;}
+#main {margin: 0px auto;padding: 0px;width: 1200px;}
 a {text-decoration: none;}
-h2 {width:110px;height:22px;line-height:22px;position:relative;font-family: '黑体'; text-align: left;color: #dbdbdb;}
+h2 {width:110px;position:relative;font-family: '黑体'; text-align: left;color: #dbdbdb;}
+.clear {clear: both;}
 /*头顶标题栏*/
+div.header {height: 423px;}
 .header img {float: left;}
-.header div {float: left;width: 110px;height: 139px;}
-.header div a {line-height:22px;position:relative;font-family: '宋体'; text-align: left;color: #dbdbdb;}
+.header div {float: left;width: 110px;height: 139px;position: relative;left: -30px;}
+.header div a {position:relative;font-family: '宋体'; text-align: left;color: #dbdbdb;}
+.header div:hover {background: url(../images/nav-hover.png);}
 .header div p:hover {color: #ffc600;}
-.header div p,h2 {margin: 0;text-align: center;}
+.header div p,h2 {margin: 0px;text-align: center;}
 .hot p {background-image: url(../images/hot.jpg);background-repeat: no-repeat;background-position: 10px;}
 .new p {background-image: url(../images/new.jpg);background-repeat: no-repeat;background-position: 10px;}
-/*鼠标处的样式*/
-.current {background: url(../images/nav-hover.png);}
+

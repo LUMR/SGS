@@ -1,4 +1,46 @@
-@CHARSET "UFT-8";
+@CHARSET "UTF-8";
 /*主页独立样式表*/
 /*主体*/
-body {background-image: url("../images/bg.jpg");background-position: -300px 0px;}
+body {background: url("../images/bg.jpg") no-repeat;background-position: -300px 0px;}
+
+/*左侧快速通道*/
+.quicklink {background-image: url(../images/q_bg.jpg);
+			background-repeat: no-repeat;width: 222px;height: 476px;float: left;}
+/*开始游戏*/
+.start_game {position: relative;top: -6px;margin: 0px 4px;}
+.start_game a {background: url(../images/start.jpg);width: 214px;height: 109px;display: block;}
+.start_game a:hover {background: url(../images/start_hover.jpg);}
+/*新手教学系列*/
+.link a {background: url(../images/bg.png) no-repeat;display: block;width: 200px;height: 53px;
+		 margin: 5px auto;}
+.link a:hover {background-position-x:-200px; }
+.class a {background-position-y: 0px;}
+.reg a {background-position-y: -59px;}
+.download a {background-position-y: -118px;}
+.active a {background-position-y: -177px;}
+/*快速通道*/
+.quicklink_s {position: relative;top: 50px;}
+.quicklink_s li {background: url(../images/ico.png) no-repeat;background-position: left;
+				 float: left;list-style-type: none;width: 80px;}
+.quicklink_s a {text-align: left;padding-left: 12px;color: #f8941f;}
+.quicklink_s a:hover {color: #ffffff;}
+
+/*中间滑动图片部分*/
+.lightbox {width: 430px;height: 260px;overflow: hidden;float: left;margin: 0px 0px 6px 7px;}
+.lightbox ul {width: 2150px;margin: 0px;padding: 0px;}
+.lightbox ul li {float: left;list-style-type: none;}
+
+/*右侧新闻公告部分*/
+.news {width: 391px;height: 259px;float:left;background-color: #41261e;}
+.news_title ul {padding: 0px;margin: 0px;}
+.news_title ul li {float: left;list-style-type: none;width: 97px;height: 37px;text-align: center;
+					background: url(../images/t_bg.jpg);line-height: 37px;
+					font-size: 18px;color: #c6afa8;}
+.news_title ul li:hover {background-image: url(../images/news-hover.jpg);}
+
+a.up_hot {font-size: 16px;color: #00fcff;height: 40px;line-height: 40px;width: 100%;display: block;
+		  text-align: center;}
+a.up_hot:hover {text-decoration: underline;}
+.news_main ul li {list-style-type: none;}
+.news_main ul li a {color: #f4ce5a;}
+.news_main ul li a:hover {color: #ffffff;}
