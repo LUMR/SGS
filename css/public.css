@@ -3,7 +3,7 @@
 body {font:normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;margin: 0px auto;}
 #main {margin: 0px auto;padding: 0px;width: 1200px;}
 a {text-decoration: none;}
-h2 {width:110px;position:relative;font-family: '黑体'; text-align: left;color: #dbdbdb;}
+h2 {width:110px;position:relative;font-family: '楷体'; text-align: left;color: #dbdbdb;}
 .clear {clear: both;}
 /*头顶标题栏*/
 div.header {height: 423px;}
