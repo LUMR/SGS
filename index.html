@@ -5,8 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 <div id="main">
@@ -97,15 +97,24 @@
 				<li><a href=""><img src="images/p4.png"></a></li>
 				<li><a href=""><img src="images/p5.png"></a></li>
 			</ul>
+			<div class="slide_num">
+				<ul>
+					<li><div class="num_box" onmouseover="slideNum(this)"></div></li>
+					<li><div class="num_box" onmouseover="slideNum(this)"></div></li>
+					<li><div class="num_box" onmouseover="slideNum(this)"></div></li>
+					<li><div class="num_box" onmouseover="slideNum(this)"></div></li>
+					<li><div class="num_box" onmouseover="slideNum(this)"></div></li>
+				</ul>
+			</div>
 		</div>
 		<!-- 右侧新闻公告部分 -->
 		<div class="news">
-			<div class="news_title">
+			<div id="news_title">
 				<ul>
-					<li><a href="">最新</a></li>
-					<li><a href="">咨询</a></li>
-					<li><a href="">活动</a></li>
-					<li><a href="">公告</a></li>
+					<li><a href="" onmouseover="showNews(this)">最新</a></li>
+					<li><a href="" onmouseover="showNews(this)">咨询</a></li>
+					<li><a href="" onmouseover="showNews(this)">活动</a></li>
+					<li><a href="" onmouseover="showNews(this)">公告</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -193,5 +202,8 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+		$(document).ready(setValue());
+	</script>
 </body>
 </html>

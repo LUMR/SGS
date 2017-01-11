@@ -27,16 +27,20 @@ body {background: url("../images/bg.jpg") no-repeat;background-position: -300px 
 
 /*中间滑动图片部分*/
 .lightbox {width: 430px;height: 260px;overflow: hidden;float: left;margin: 0px 0px 6px 7px;}
-.lightbox ul {width: 2150px;height: 260px;margin: 0px;padding: 0px;position: relative;}
+.lightbox>ul {width: 2150px;height: 260px;margin: 0px;padding: 0px;position: relative;}
 .lightbox ul li {float: left;list-style-type: none;}
+.slide_num {position: relative;left: 250px;bottom: 36px;width: 200px;height: 50px;}
+.slide_num li {float: left;margin-left: 10px;}
+.num_box {width: 15px;height: 15px;background-color: white;display: block;}
+.num_box:hover {background-color: #ff8a00;}
 
 /*右侧新闻公告部分*/
 .news {width: 391px;height: 260px;float:left;background-color: #41261e;overflow: hidden;}
-.news_title ul {padding: 0px;margin: 0px;}
-.news_title ul li {float: left;list-style-type: none;width: 97px;height: 37px;text-align: center;
+#news_title ul {padding: 0px;margin: 0px;}
+#news_title ul li {float: left;list-style-type: none;width: 97px;height: 37px;text-align: center;
 					background: url(../images/t_bg.jpg);line-height: 37px;
 					font-size: 18px;color: #c6afa8;}
-.news_title ul li:hover {background-image: url(../images/news-hover.jpg);}
+#news_title ul li:hover {background-image: url(../images/news-hover.jpg);}
 
 a.up_hot {font-size: 16px;color: #00fcff;height: 40px;line-height: 40px;width: 100%;display: block;
 		  text-align: center;}
