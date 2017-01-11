@@ -31,7 +31,7 @@ body {background: url("../images/bg.jpg") no-repeat;background-position: -300px 
 .lightbox ul li {float: left;list-style-type: none;}
 
 /*右侧新闻公告部分*/
-.news {width: 391px;height: 259px;float:left;background-color: #41261e;}
+.news {width: 391px;height: 260px;float:left;background-color: #41261e;overflow: hidden;}
 .news_title ul {padding: 0px;margin: 0px;}
 .news_title ul li {float: left;list-style-type: none;width: 97px;height: 37px;text-align: center;
 					background: url(../images/t_bg.jpg);line-height: 37px;
@@ -41,6 +41,19 @@ body {background: url("../images/bg.jpg") no-repeat;background-position: -300px 
 a.up_hot {font-size: 16px;color: #00fcff;height: 40px;line-height: 40px;width: 100%;display: block;
 		  text-align: center;}
 a.up_hot:hover {text-decoration: underline;}
+.news_main ul {padding-left: 30px;margin-bottom: 5px;}
 .news_main ul li {list-style-type: none;}
-.news_main ul li a {color: #f4ce5a;}
+.news_main ul li > span {color: #f4ce5a;}
+.news_main ul li a {color: #f4ce5a;width: 300px;display: block;float: left;}
 .news_main ul li a:hover {color: #ffffff;}
+a.more_news {margin: 5px;margin-left: 320px;color: #ce8a54;}
+
+/*下方热门活动部分*/
+.hot_actives {width: 821px;height: 209px;float: left;margin-left: 7px;
+			  background: url(../images/act-bg.jpg);}
+.hot_actives_title {height: 40px;display: block;}
+.hot_actives_title img {position: relative;top: -3px;}
+.hot_actives_main ul {padding: 0;margin-left: 6px;}
+.hot_actives_main li {float: left;list-style-type: none;padding:0px 6px;}
+.hot_actives_main a {margin: 0 auto;width: 190px;text-align: center;display: block;color: #ce8a54;}
+.hot_actives_main a.act_name:hover {color: #b52200;}

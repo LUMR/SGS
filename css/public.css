@@ -12,7 +12,7 @@ div.header {height: 423px;}
 .header div a {position:relative;font-family: '宋体'; text-align: left;color: #dbdbdb;}
 .header div:hover {background: url(../images/nav-hover.png);}
 .header div p:hover {color: #ffc600;}
-.header div p,h2 {margin: 0px;text-align: center;}
+.header div p,h2 {margin: 5px 0px;text-align: center;}
 .hot p {background-image: url(../images/hot.jpg);background-repeat: no-repeat;background-position: 10px;}
 .new p {background-image: url(../images/new.jpg);background-repeat: no-repeat;background-position: 10px;}
 
