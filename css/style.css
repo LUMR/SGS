@@ -37,10 +37,11 @@ body {background: url("../images/bg.jpg") no-repeat;background-position: -300px 
 /*右侧新闻公告部分*/
 .news {width: 391px;height: 260px;float:left;background-color: #41261e;overflow: hidden;}
 #news_title ul {padding: 0px;margin: 0px;}
-#news_title ul li {float: left;list-style-type: none;width: 97px;height: 37px;text-align: center;
+#news_title ul li {float: left;list-style-type: none;text-align: center;
 					background: url(../images/t_bg.jpg);line-height: 37px;
 					font-size: 18px;color: #c6afa8;}
 #news_title ul li:hover {background-image: url(../images/news-hover.jpg);}
+#news_title a {width: 97px;height: 37px;display: block;}
 
 a.up_hot {font-size: 16px;color: #00fcff;height: 40px;line-height: 40px;width: 100%;display: block;
 		  text-align: center;}
