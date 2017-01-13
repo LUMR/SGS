@@ -35,13 +35,13 @@ body {background: url("../images/bg.jpg") no-repeat;background-position: -300px 
 .num_box:hover {background-color: #ff8a00;}
 
 /*右侧新闻公告部分*/
-.news {width: 391px;height: 260px;float:left;background-color: #41261e;overflow: hidden;}
+.news {width: 425px;height: 260px;float:left;background-color: #41261e;overflow: hidden;}
 #news_title ul {padding: 0px;margin: 0px;}
 #news_title ul li {float: left;list-style-type: none;text-align: center;
 					background: url(../images/t_bg.jpg);line-height: 37px;
 					font-size: 18px;color: #c6afa8;}
 #news_title ul li:hover {background-image: url(../images/news-hover.jpg);}
-#news_title a {width: 97px;height: 37px;display: block;}
+#news_title a {width: 106px;height: 37px;display: block;}
 
 a.up_hot {font-size: 16px;color: #00fcff;height: 40px;line-height: 40px;width: 100%;display: block;
 		  text-align: center;}
@@ -54,7 +54,7 @@ a.up_hot:hover {text-decoration: underline;}
 a.more_news {margin: 5px;margin-left: 320px;color: #ce8a54;}
 
 /*下方热门活动部分*/
-.hot_actives {width: 821px;height: 209px;float: left;margin-left: 7px;
+.hot_actives {width: 855px;height: 209px;float: left;margin-left: 7px;
 			  background: url(../images/act-bg.jpg);}
 .hot_actives_title {height: 40px;display: block;}
 .hot_actives_title img {position: relative;top: -3px;}

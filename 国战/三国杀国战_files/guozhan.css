@@ -1,0 +1,666 @@
+@CHARSET "UTF-8";
+
+/*---------- import ---------*/
+@import url("layout.css");
+@import url("show.css");
+
+/*---------- base ---------*/
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	font:12px Verdana,Arial,Tahoma;
+	background: url("../images/guozhan/main.jpg") repeat;
+	min-width:1226px;
+}
+img{
+	border:none;
+}
+
+a{
+	color:#B2B2A0;
+	text-decoration:none;
+}
+a:hover{
+	color:#ba2636;
+	text-decoration:underline;
+}
+ul{
+	list-style:none;
+}
+input,select,button{
+	font:12px Verdana,Arial,Tahoma;
+	vertical-align:middle;
+}
+.center{
+	margin:0px auto;
+}
+.w960{
+	width:1226px;
+	/*position:relative;*/
+}
+
+.top{
+	height:35px!important;
+	height:35px;
+	line-height:35px;
+	overflow:hidden;
+    background:url("../images/guozhan/wuyan.png") repeat-x;
+}
+.header{
+	width:1226px;
+	margin:0 auto;
+	z-index: 9999;
+	position: relative;
+	height: 407px;
+	margin-top: -4px;
+}
+.header_left{
+	background: url("../images/guozhan/left.png") no-repeat; 
+	height:401px; 
+	width:158px;
+	float:left;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/left.png');
+}
+.header_center{
+	background: url("../images/guozhan/header.jpg") no-repeat scroll center;
+	height:336px;
+	width:936px;
+	float:left;
+	color:#fef6d6;
+}
+.guozhan_index {
+	display: block;
+	margin-top: 30px;
+	width: 100%;
+	height: 230px;
+	text-indent: -9999px;
+}
+.header_right{
+	background: url("../images/guozhan/right.png") no-repeat; 
+	height:401px;
+	width:100px;
+	float:left;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/right.png');
+}
+.nav{
+	position:absolute;
+	left: 0px;
+	margin:255px 0 0 141px;
+}
+.main{
+	width:1226px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.nav_bg{
+	width:962px;
+	height:178px;
+	padding-left: 9px;
+	background: url("../images/guozhan/nav.png") no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/nav.png');
+}
+.middle_top{
+	width:1100px;
+	margin:0 auto;
+	overflow:hidden;
+}
+/* 快速上手 */
+.fast_to_fit{
+	margin-left:90px;
+	float:left;
+	display: inline;
+}
+/* 视频 */
+.video{
+	float:left;
+	width:168px;
+	margin-left:7px;
+	display: inline;
+}
+.video_top{
+	background: url("../images/guozhan/video-top.jpg") no-repeat;
+	height:27px;
+}
+.video_middle{
+	background:url("../images/guozhan/video-middle.jpg") repeat-y;
+	height:287px;
+}
+.video_middle_top{
+	margin-left:3px;
+}
+.video_middle_botton{
+	margin:5px 0 0 3px;
+}
+.video_botton{
+	background: url("../images/guozhan/video-botton.jpg") no-repeat;
+	height:5px;
+}
+/* 游戏牌  */
+.game_card{
+	width:962px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-top:13px;
+	position: relative;
+}
+.mark{
+	position: absolute;
+	left:0;
+}
+.game_mark{
+	background: url("../images/guozhan/game-mark.png") no-repeat;
+	width:56px;
+	height:20px;
+	margin:10px 0 0 50px;
+	left:0;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/game-mark.png');
+}
+.base_mark{
+	background: url("../images/guozhan/base-mark.png") no-repeat;
+	width:94px;
+	height:45px;
+	margin:5px 0 0 59px;
+	float: left;
+	display: inline;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/base-mark.png');
+}
+.others_mark{
+	background: url("../images/guozhan/others-mark.png") no-repeat;
+	width:94px;
+	height:45px;
+	margin:5px 0 0 345px;
+	float: left;
+	display: inline;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/others-mark.png');
+}
+.equipment_mark{
+	background: url("../images/guozhan/equipment-mark.png") no-repeat;
+	width:94px;
+	height:45px;
+	margin:107px 0 0 59px;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/equipment-mark.png');
+}
+.kits_mark{
+	background: url("../images/guozhan/kits-mark.png") no-repeat;
+	width:94px;
+	height:45px;
+	margin:25px 0 0 59px;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/kits-mark.png');
+}
+.game_left{
+	float:left;
+	margin-left:20px;
+	display: inline;
+}
+.circle{
+	background: url("../images/guozhan/circle.jpg") no-repeat;
+	height:46px;
+	width:36px;
+}
+.game_left_block{
+	background: url("../images/guozhan/game-left.jpg") no-repeat;
+	height:16px;
+	width:36px;
+}
+.game_left_blocks{
+	background: url("../images/guozhan/game-left-block.jpg") repeat-y;
+    height:215px;
+    width:36px;
+}
+
+.game_center{
+	background-color:#472f26;
+	width:867px;
+	height:277px;
+	float:left;
+}
+.game_center ul{
+	font-color:#fff;
+	color: #6C6D61;
+	float: left;
+	height: 50px;
+	width: 720px;
+	margin-left:90px;
+	display: inline;
+	position: absolute;
+}
+.game_center ul li {
+	font-color:#fff;
+	float: left;
+	height: 10px;
+	width: 70px;
+	display: inline;
+	margin-top:10px;
+	text-align: center;
+}
+.game_center ul li a p {
+    line-height: 10px;
+    padding-top:3px;
+    width:50px;
+    text-align: center;
+}
+.game_top{
+	background: url("../images/guozhan/game-top.jpg") no-repeat;
+	height:46px;
+}
+.base_card{
+	background: url("../images/guozhan/game-card.jpg") no-repeat;
+	height:84px;
+	width:417px;
+	float:left;
+	margin-left:10px;
+	display: inline;
+}
+.base_card ul{
+	width:300px;
+	height:80px;
+}
+.base_card ul li{
+	width:50px;
+}
+.others_card{
+	background: url("../images/guozhan/game-card.jpg") no-repeat;
+	height:84px;
+	width:417px;
+	float:left;
+	margin-left:23px;
+	display: inline;
+}
+.others_card ul{
+	width:300px;
+	height:80px;
+}
+.others_card ul li{
+	width:50px;
+}
+.equipment_card{
+	background: url("../images/guozhan/game-cards.png") no-repeat;
+	height:57px;
+	width:855px;
+	float:left;
+	margin:12px 0 0 12px;
+	display: inline;
+}
+.kits_card{
+	background: url("../images/guozhan/game-cards.png") no-repeat;
+	height:57px;
+	width:855px;
+	float:left;
+	margin:12px 0 0 12px;
+	display: inline;
+}
+.game_right{
+	width:34px;
+	float:left;
+}
+.game_rights{
+	background: url("../images/guozhan/game-right.jpg") no-repeat;
+	height:46px;
+	width:34px;
+}
+
+.game_right_block{
+	background: url("../images/guozhan/game-rights.jpg") no-repeat;
+	height:16px;
+	width:36px;
+}
+.game_right_blocks{
+	background: url("../images/guozhan/game-right-block.jpg") repeat-y;
+    height:215px;
+    width:36px;
+}
+.game-botton{
+	background: url("../images/guozhan/game-botton.jpg") no-repeat;
+	height:3px;
+	margin-left:152px;
+}
+/* 势力牌  */
+.forces_card{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-top:13px;
+	position: relative;
+}
+.forces_mark{
+	background: url("../images/guozhan/forces-card.png") no-repeat;
+	width:56px;
+	height:20px;
+	margin:10px 0 0 50px;
+	position: absolute;
+	left:0;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/forces-card.png');
+}
+.wei_mark{
+	background: url("../images/guozhan/wei.png") no-repeat;
+	width:94px;
+	height:59px;
+	margin:15px 0 0 8px;
+	left:0;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/wei.png');
+}
+.shu_mark{
+	background: url("../images/guozhan/shu.png") no-repeat;
+	width:94px;
+	height:59px;
+	margin:113px 0 0 8px;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/shu.png');
+}
+.wu_mark{
+	background: url("../images/guozhan/wu.png") no-repeat;
+	width:94px;
+	height:59px;
+	margin:113px 0 0 8px;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/wu.png');
+}
+.qun_mark{
+	background: url("../images/guozhan/qun.png") no-repeat;
+	width:94px;
+	height:59px;
+	margin:113px 0 0 8px;
+	color:#fef6d6;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/qun.png');
+}
+.mt{
+	margin-top:15px;
+}
+.forces_pic{
+	background: url("../images/guozhan/forces-pic.jpg") no-repeat;
+	width:856px;
+	height:155px;
+	margin-left:11px;
+}
+
+.forces_left_blocks{
+	background: url("../images/guozhan/game-left-block.jpg") repeat-y;
+    height:680px;
+    width:36px;
+}
+.forces_center{
+	background-color:#472f26;
+	float:left;
+	width:867px;
+	height:742px;
+}
+.forces_center ul{
+	font-color:#fff;
+	color: #6C6D61;
+	float: left;
+	height: 140px;
+	width: 720px;
+	margin-left:100px;
+	display: inline;
+}
+.forces_center ul li{
+	font-color:#fff;
+	float: left;
+	height: 60px;
+	width: 60px;
+	display: inline;
+	margin:10px 0 0 10px;
+}
+.forces_center ul li a span {
+    line-height: 10px;
+    padding-top: 3px;
+}
+.forces_right_blocks{
+	background: url("../images/guozhan/game-right-block.jpg") repeat-y;
+    height:680px;
+    width:36px;
+}
+.game-bottons{
+	background: url("../images/guozhan/game-botton.jpg") no-repeat;
+	height:3px;
+	margin-left:153px;
+}
+
+/* 底部 */
+.foot{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+	margin:55px 0px;
+	float:left;
+	margin-left:160px;
+	display: inline;
+}
+.left_footer{
+	float:left;
+	margin-top: 50px;
+	margin-right: 5px;
+}
+.center_footer{
+	float:left;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+}
+.right_footer{
+	float:left;
+	margin-top: 40px;
+	margin-left: 5px;
+}
+
+
+.btn {
+	float:left;
+	display: inline;
+	margin-top: 5px;
+	margin-left: 163px;
+	line-height: 30px;
+	background: url("../images/guozhan/index_wenzi.png") no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='http://www.dede.com/templets/default/images/guozhan/index_wenzi.png');
+}
+.btn a {
+	float: left;
+	text-align: center;
+	position: relative;
+	width: 72px;
+	margin-left: 9px;
+	text-indent: -9999px;
+}
+#afs {
+	width: 38px;
+	margin-left: 6px;
+}
+.btn :hover {
+	background: url("../images/guozhan/index_wenzi.png") no-repeat;
+}
+.btn .menu0:hover {
+	background-position: -6px -30px;
+}
+.btn .menu1:hover {
+	background-position: -53px -30px;
+}
+.btn .menu2:hover {
+	background-position: -134px -30px;
+}
+.btn .menu3:hover {
+	background-position: -215px -30px;
+}
+.btn .menu4:hover {
+	background-position: -296px -30px;
+}
+.btn .menu5:hover {
+	background-position: -377px -30px;
+}
+.btn .menu6:hover {
+	background-position: -458px -30px;
+}
+.btn .menu7:hover {
+	background-position: -539px -30px;
+}
+.btn .menu8:hover {
+	background-position: -620px -30px;
+}
+.btn .menu9:hover {
+	background-position: -701px -30px;
+}
+.nav div {
+	float:left;
+	display:inline;
+}
+.nav a {
+	cursor:pointer;
+	display: block;
+	position: relative;
+	text-indent: -9999px;
+}
+.nav_d a {
+	width: 187px;
+	height: 43px;
+	margin-top: 86px;	
+}
+.xinshou {
+	background: url("../images/guozhan/xinshou1.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/xinshou1.png');
+}
+.xinshou_hover {
+	background: url("../images/guozhan/xinshou2.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/xinshou2.png');
+}
+.guize {
+	text-indent: -9999px;
+	background: url("../images/guozhan/guize1.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/guize1.png');
+}
+.guize_hover {
+	background: url("../images/guozhan/guize2.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/guize2.png');
+}
+.kapai {
+	text-indent: -9999px;
+	background: url("../images/guozhan/kapai1.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/kapai1.png');
+}
+.kapai_hover {
+	background: url("../images/guozhan/kapai2.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/kapai2.png');
+}
+.gaoshou {
+	background: url("../images/guozhan/gaoshou1.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/gaoshou1.png');
+}
+.gaoshou_hover {
+	background: url("../images/guozhan/gaoshou2.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/gaoshou2.png');
+}
+.gmid {
+	width: 197px;
+}
+.nav_s {
+	margin-top: 62px;
+	margin-left: 71px;
+}
+.gsta {
+	width: 60px;
+	height: 52px;
+}
+.gsta:hover {
+	background: url("../images/guozhan/gstart.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/gstart.png');
+}
+.nav_b {
+	margin-top: 21px;
+	margin-left: 54px;
+}
+.gbuy {
+	width: 90px;
+	height: 24px;
+}
+.gbuy:hover {
+	background: url("../images/guozhan/buy.png") no-repeat transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', 
+	src='http://www.dede.com/templets/default/images/guozhan/buy.png');
+}
+.subnav {
+	display: none;
+	position: absolute;
+	left: 0px;
+	width: 136px;
+	height: 187px;
+	margin-top: 378px;
+	padding-top: 6px;
+	background: url("../images/guozhan/sub_mune.png") no-repeat transparent;
+}
+#subnav_xinshou {
+	margin-left: 174px;
+}
+#subnav_guize {
+	margin-left: 360px;
+}
+#subnav_kapai {
+	margin-left: 745px;
+}
+#subnav_gaoshou {
+	margin-left: 932px;
+}
+.subnav a {
+	display: block;
+	color: #E1C1A8;
+	line-height: 26px;
+	margin-left: 15px;
+	padding-left: 35px;
+	background: url("../images/guozhan/point.png") no-repeat transparent;
+}
+.subnav a:hover {
+	color: #d49c3b;
+	background: url("../images/guozhan/point2.png") no-repeat transparent;
+}
+
+
+.copyright{ padding:30px 0 ; /*overflow:hidden;*/ color:#bbb;}
+.copyright .main{ width:1050px; margin:0 auto; overflow:hidden;}
+.copyright img{ margin-right:10px; vertical-align:middle;}
+.copyright .lines{ width:1px; height:25px; border-left:1px solid #b2b2b2; margin-right:8px; vertical-align:middle; display:inline-block;}
+.copyright-left{ width:330px; padding-top:10px; float:left;}
+.copyright-text{ width:700px; border-left:1px solid #b2b2b2; font-size:12px; padding-left:16px; line-height:18px; float:left;text-align: left;}
+.copyright-text span{ color:#333; padding:0 4px;}
+.copy-gs img{ width:40px;}

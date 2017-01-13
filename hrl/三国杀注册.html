@@ -7,7 +7,8 @@
         *{margin:0; padding:0;}
         #box{height: 1000px; width:100%;   background-image: url(wrap_bg.jpg);}
         .box1{ background-color: white; width: 1000px;height: 600px;margin: 0  200px 100px 200px; border:1px  solid; }
-        .sshow{width: 350px; height: 40px;border: 1px white ;margin-left:200px;}
+        .sshow{width: 600px; height: 40px;border: 1px white ;margin-left:200px;}
+        .sshow scan {color: red;}
         .sa1{ margin-left: 350px;} 
         .sb { margin-left: 200px;}
         .sb input{color: white;background: red;font-size: 17px;}
@@ -30,8 +31,8 @@
         <div class="logo_1"><img src="guide_btn.png"><a id="linkShowContrast" href="#" onclick="showContrast();return true;" hidefocus="false"></a></div>
         <ul class="sb">
 		    <li class="cur"><input style="width:108px; height:30px;" type="button" onclick="a1()" value="手机注册"></li>
-        <li><input  style="width:108px; height:30px;"type="button" onclick="a2()" value="邮箱注册"></li>
-        <li><input  style="width:108px; height:30px;"type="button" onclick="a3()" value="个性注册"></li>
+        <li><input  style="width:108px; height:30px;"type="button" value="邮箱注册"></li>
+        <li><input  style="width:108px; height:30px;"type="button" value="个性注册"></li>
 
         
         </ul>
@@ -47,18 +48,18 @@
       
          
       
-         <div class="sshow"><input name="userNume" style="width:320px; height:30px;" type="text" value="验证码（必须填写）"/><br/></div>
+         <div class="sshow"><input name="userNume" style="width:320px; height:30px;" type="text" placeholder="验证码（必须填写）"/><br/></div>
        
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="验证码（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="短信验证码（必须填写）"/><br/></div>
-        <div class="sshow"> <input name="userNume" style="width:320px; height:30px;"type="text" value="静态密码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="验证码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="短信验证码（必须填写）"/><br/></div>
+        <div class="sshow"> <input name="userNume" style="width:320px; height:30px;"type="text" placeholder="静态密码（必须填写）"/><br/></div>
        
         <div class="sshow">
             实名及防沉迷信息填写<br/>
            </div>
         <div class="sshow">
-        <input name="userNume" style="width:320px; height:30px;"type="text" value="真实姓名（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;" type="text" value="身份证号码（必须填写）"/><br/>
+        <input name="userNume" style="width:320px; height:30px;"type="text" placeholder="真实姓名（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;" type="text" placeholder="身份证号码（必须填写）"/><br/>
         </div>
         <br/>
         
@@ -67,30 +68,30 @@
        
         <div id="two" class="wows" style="display:none;">
           <br/>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="邮箱（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="静态密码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="邮箱（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="静态密码（必须填写）"/><br/></div>
         <div class="sshow">
                 实名及防沉迷信息填写<br/>
                </div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="真实姓名（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="身份证号码（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="验证码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="真实姓名（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="身份证号码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="验证码（必须填写）"/><br/></div>
 
         </div>
 
         <div id="three" class="wows" style="display:none;">
           <br/>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="个性账号（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="注册手机号码（与邮箱选填一项）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="注册邮箱（与手机号码选填一项）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="静态密码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="个性账号（必须填写）" /><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="注册手机号码（与邮箱选填一项）"/><br/></div>
+        <div class="sshow"><input name="userNume" id="email" style="width:320px; height:30px;"type="text" placeholder="注册邮箱（与手机号码选填一项）" onblur="checkEmail()" /><scan id="email_prompt"><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="静态密码（必须填写）"/><br/></div>
         <div class="sshow">
                 实名及防沉迷信息填写<br/>
                </div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="真实姓名（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="身份证号码（必须填写）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="邮箱（选团）"/><br/></div>
-        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="验证码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="真实姓名（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="身份证号码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="邮箱（选团）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" placeholder="验证码（必须填写）"/><br/></div>
         </div>
            <div class="sshow"><input type="radio" name="" value="已阅读并同意用户协议"/>已阅读并同意用户协议<br/></div>
         <br/>
