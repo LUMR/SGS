@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>三国杀注册</title>
+<style type="text/css">
+        *{margin:0; padding:0;}
+        #box{height: 1000px; width:100%;   background-image: url(wrap_bg.jpg);}
+        .box1{ background-color: white; width: 1000px;height: 600px;margin: 0  200px 100px 200px; border:1px  solid; }
+        .sshow{width: 350px; height: 40px;border: 1px white ;margin-left:200px;}
+        .sa1{ margin-left: 350px;} 
+        .sb { margin-left: 200px;}
+        .sb input{color: white;background: red;font-size: 17px;}
+        li {float: left;list-style: none;}
+        .cur {background-color: red;}
+        .clean {clear: both;}
+        .logo{margin-left: 200px;}
+        .logo_1{margin-left: 350px;}
+        .sc{}
+        .sd{float: right;margin-right: 160px;}
+        p{text-align:center; font-size: 15px;color: white;}
+        </style>
+        </head>
+
+        <body>
+	      <div id="box">
+          <div style="background-image: url(imges/wrap_bg.jpg);width:100%;height:100px;"></div>
+	      <div class="box1">
+        <div class="logo"> <h2><img src="youka2.png"></h2></div>
+        <div class="logo_1"><img src="guide_btn.png"><a id="linkShowContrast" href="#" onclick="showContrast();return true;" hidefocus="false"></a></div>
+        <ul class="sb">
+		    <li class="cur"><input style="width:108px; height:30px;" type="button" onclick="a1()" value="手机注册"></li>
+        <li><input  style="width:108px; height:30px;"type="button" onclick="a2()" value="邮箱注册"></li>
+        <li><input  style="width:108px; height:30px;"type="button" onclick="a3()" value="个性注册"></li>
+
+        
+        </ul>
+        <div class="clean"></div>
+        <div class="b_box">
+        <div id="one" class="wows">
+       
+        <div></div>
+        <div class="sd"><img src="banner.jpg"></div>
+       
+       
+        <div id="a" class="sshow"><a>4-16位字母或数字，首位为字母</a></div>
+      
+         
+      
+         <div class="sshow"><input name="userNume" style="width:320px; height:30px;" type="text" value="验证码（必须填写）"/><br/></div>
+       
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="验证码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="短信验证码（必须填写）"/><br/></div>
+        <div class="sshow"> <input name="userNume" style="width:320px; height:30px;"type="text" value="静态密码（必须填写）"/><br/></div>
+       
+        <div class="sshow">
+            实名及防沉迷信息填写<br/>
+           </div>
+        <div class="sshow">
+        <input name="userNume" style="width:320px; height:30px;"type="text" value="真实姓名（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;" type="text" value="身份证号码（必须填写）"/><br/>
+        </div>
+        <br/>
+        
+        </ul>
+        </div>
+       
+        <div id="two" class="wows" style="display:none;">
+          <br/>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="邮箱（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="静态密码（必须填写）"/><br/></div>
+        <div class="sshow">
+                实名及防沉迷信息填写<br/>
+               </div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="真实姓名（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="身份证号码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="验证码（必须填写）"/><br/></div>
+
+        </div>
+
+        <div id="three" class="wows" style="display:none;">
+          <br/>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="个性账号（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="注册手机号码（与邮箱选填一项）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="注册邮箱（与手机号码选填一项）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="静态密码（必须填写）"/><br/></div>
+        <div class="sshow">
+                实名及防沉迷信息填写<br/>
+               </div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="真实姓名（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="身份证号码（必须填写）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="邮箱（选团）"/><br/></div>
+        <div class="sshow"><input name="userNume" style="width:320px; height:30px;"type="text" value="验证码（必须填写）"/><br/></div>
+        </div>
+           <div class="sshow"><input type="radio" name="" value="已阅读并同意用户协议"/>已阅读并同意用户协议<br/></div>
+        <br/>
+        <div  class="sa1"><input style="width:100px; height:30px;"  type="submit" value="接受协议并注册》" /></div>
+      </div>
+    </div>
+    <p>不良信息举报中心 | 网络110报警服务 | 文化市场举报热线</p>
+    <p>增值电信业务经营许可证号码 [浙B2-20160108] 杭州游卡网络技术有限公司 版权所有</p>
+  </div>
+
+</body>
+<script type="text/javascript">
+/*function changeBody(index){
+  switch(index){
+    case 1:{
+      document.getElementById('one').style.display = "block";
+      document.getElementById('two').style.display = "none";
+      document.getElementById('three').style.display = "none";
+    }
+    case 2:{
+      document.getElementById('one').style.display = "none";
+      document.getElementById('two').style.display = "block";
+      document.getElementById('three').style.display = "none";
+    }
+    case 3:{
+      document.getElementById('one').style.display = "none";
+      document.getElementById('two').style.display = "none";
+      document.getElementById('three').style.display = "block";
+    }
+  }
+}*/
+
+var li = document.getElementsByTagName('li');
+    var div = document.getElementsByClassName('wows');
+    for(var i=0; i < li.length; i++){
+       //记录数组下标
+      li[i].index=i;
+      //触发事件
+      li[i].onclick=function(){
+        //把所有div都不显示
+        for (var j = 0; j < li.length; j++) {
+          div[j].style.display="none";
+        }
+        //把点击事件关联的div显示出来
+        div[this.index].style.display="block";
+      }
+      
+
+    }
+    
+///用户只可以输入4-16位的字母跟数字
+function a(){
+var user=document.getElementById("a").value;
+if(user.length<4||user.length>16)
+alert("用户输入不正确");
+}
+function checkEmail(){
+  var email =document.getElementById("email").value;
+  var email_prompt=document.getElementById("email_prompt");
+  email_prompt.innerHTML="";
+  if(email==""){
+    email_prompt.innerHTML="Email 不能为空";
+    return false;
+  }
+  if(email.indexOf("@")==-1||email.indexOf(".")==-1){
+    email_prompt.innerHTML="Email 格式不正确，必须包含@和.";
+    return false;
+  }
+}
+</script>
+</html>

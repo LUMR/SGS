@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>三国杀国战</title>
+<style type="text/css">
+
+a:hover {color:#CCC;}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+	background-image:url(%E6%83%A0%E5%B7%9E%E5%93%A5/main.jpg);
+	min-width:1226px;
+	
+}
+.a{
+	background-image:url(%E6%83%A0%E5%B7%9E%E5%93%A5/wuyan.png);
+	background-repeat:repeat-x;
+	height:35px;
+	line-height:35px;
+}
+.b{
+	
+}
+.left{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/left.png) no-repeat;
+	height: 336px;
+    width: 158px;
+    float: left;
+}
+.header{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/header.jpg) no-repeat;
+	height: 336px;
+    width: 936px;
+    float: left;
+}
+.header1{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/index_wenzi.png) no-repeat;
+	float: left;
+    display: inline;
+    margin-top: 5px;
+    margin-left: 163px;
+    line-height: 30px;
+}
+a{
+	color: #B2B2A0;
+    text-decoration: none;
+	font-size:13px;
+}
+#afs{
+	width: 38px;
+    margin-left: 6px;
+}
+.header1 a{
+	float: left;
+    text-align: center;
+    position: relative;
+    width: 72px;
+    margin-left: 9px;
+    text-indent: -9999px;
+}
+.right{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/right.png) no-repeat;
+	height: 336px;
+    width: 100px;
+    float: left;
+}
+.ks{
+	position: absolute;
+    left: 0px;
+    margin: 255px 0px 0px 141px;
+}
+.ks div{
+	float: left;
+    display: inline;
+}
+.ks1{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/nav.png) no-repeat;
+	width: 962px;
+    height: 178px;
+    padding-left: 9px;
+}
+.shangshou{
+	margin-top:400px;
+	width: 930px;
+    margin-left: 150px;
+}
+.shangshou1{
+	float:left;
+	margin-left: 5px;
+}
+.shangshou2{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/video-middle.jpg) repeat-y;
+	float:right;
+	margin-right:-12px;
+}
+.shangshou3{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/video-botton.jpg) no-repeat;
+	height: 5px;
+}
+.c{
+	width: 962px;
+    margin: 0 auto;
+    overflow: hidden;
+	margin-left:135px;
+	position:relative;
+	padding-top: 10px;
+}
+.mark {
+    position: absolute;
+    left: 0;
+}
+.c-1{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-mark.png);
+	width: 56px;
+    height: 20px;
+    margin: 10px 0 0 50px;
+    left: 0;
+}
+.c-2{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/base-mark.png);
+	width: 94px;
+    height: 45px;
+    margin: 5px 0 0 59px;
+    float: left;
+    display: inline;
+    color: #fef6d6;
+}
+.c-3{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/others-mark.png) no-repeat;
+	width: 94px;
+    height: 45px;
+    margin: 5px 0 0 345px;
+    float: left;
+    display: inline;
+    color: #fef6d6;
+}
+.c-4{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/equipment-mark.png) no-repeat;
+	width: 94px;
+    height: 45px;
+    margin: 107px 0 0 59px;
+    color: #fef6d6;
+}
+.c-5{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/kits-mark.png) no-repeat;
+	width: 94px;
+    height: 45px;
+    margin: 25px 0 0 59px;
+    color: #fef6d6;
+}
+.mark-left{
+	float: left;
+    margin-left: 20px;
+    display: inline;
+}
+.c-6{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/circle.jpg) no-repeat;
+	height: 46px;
+    width: 36px;
+}
+.c-7{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-left.jpg) no-repeat;
+	height: 16px;
+    width: 36px;
+}
+.c-8{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-left-block.jpg) repeat-y;
+	height: 215px;
+    width: 36px;
+}
+.mark-center{
+	background-color: #472f26;
+    width: 867px;
+    height: 277px;
+    float: left;
+}
+.c-9{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-top.jpg) no-repeat;
+	height: 46px;
+}
+.c-10{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-card.jpg) no-repeat;
+	height: 84px;
+    width: 417px;
+    float: left;
+    margin-left: 10px;
+    display: inline;
+}
+.c-11{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-card.jpg) no-repeat;
+	height: 84px;
+    width: 417px;
+    float: left;
+    margin-left: 23px;
+    display: inline;
+}
+.c-12{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-cards.png) no-repeat;
+	height: 57px;
+    width: 855px;
+    float: left;
+    margin: 12px 0 0 12px;
+    display: inline;
+}
+.c-13{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-cards.png) no-repeat;
+	height: 57px;
+    width: 855px;
+    float: left;
+    margin: 12px 0 0 12px;
+    display: inline;
+}
+.mark-right{
+	width: 34px;
+    float: left;
+}
+.c-14{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-right.jpg) no-repeat;
+	height: 46px;
+    width: 34px;
+}
+.c-15{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-rights.jpg) no-repeat;
+	height: 16px;
+    width: 36px;
+}
+.c-16{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-right-block.jpg) repeat-y;
+	height: 215px;
+    width: 36px;
+}
+.mark-botton{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-botton.jpg) no-repeat;
+	height: 3px;
+    margin-left: 155px;
+}
+.d{
+	width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 13px;
+    position: relative;
+	margin-left: 135px;
+}
+.forces-mark{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/forces-card.png) no-repeat;
+	width: 56px;
+    height: 20px;
+    margin: 10px 0 0 50px;
+    position: absolute;
+    left: 0;
+    color: #fef6d6;
+}
+.left-mark{
+	float: left;
+    margin-left: 20px;
+    display: inline;
+}
+.center-mark{
+	background-color: #472f26;
+    float: left;
+    width: 867px;
+    height: 742px;
+}
+.right-mark{
+	width: 34px;
+    float: left;
+}
+.wei{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/wei.png) no-repeat;
+	width: 94px;
+    height: 59px;
+    margin: 15px 0 0 8px;
+    left: 0;
+    color: #fef6d6;
+}
+.shu{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/shu.png) no-repeat;
+	width: 94px;
+    height: 59px;
+    margin: 113px 0 0 8px;
+    color: #fef6d6;
+}
+.wu{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/wu.png) no-repeat;
+	width: 94px;
+    height: 59px;
+    margin: 113px 0 0 8px;
+    color: #fef6d6;
+}
+.qun{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/qun.png) no-repeat;
+	width: 94px;
+    height: 59px;
+    margin: 113px 0 0 8px;
+    color: #fef6d6;
+}
+.left1{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/circle.jpg) no-repeat;
+	height: 46px;
+    width: 36px;
+}
+.left2{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-left.jpg) no-repeat;
+	height: 16px;
+    width: 36px;
+}
+.left3{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-left-block.jpg) repeat-y;
+	height: 680px;
+    width: 36px;
+}
+.center-mark1{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-top.jpg) no-repeat;
+	height: 46px;
+}
+.center-mark2{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/forces-pic.jpg) no-repeat;
+	width: 856px;
+    height: 155px;
+    margin-left: 11px;
+	margin-bottom: 15px;
+}
+.center-mark3{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/forces-pic.jpg) no-repeat;
+	width: 856px;
+    height: 155px;
+    margin-left: 11px;
+	margin-bottom: 15px;
+}
+.center-mark4{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/forces-pic.jpg) no-repeat;
+	width: 856px;
+    height: 155px;
+    margin-left: 11px;
+	margin-bottom: 15px;
+}
+.center-mark5{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/forces-pic.jpg) no-repeat;
+	width: 856px;
+    height: 155px;
+    margin-left: 11px;
+}
+.right1{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-right.jpg) no-repeat;
+	height: 46px;
+    width: 34px;
+}
+.right2{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-rights.jpg) no-repeat;
+	height: 16px;
+    width: 36px;
+}
+.right3{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-right-block.jpg) repeat-y;
+	height: 680px;
+    width: 36px;
+}
+.w{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/game-botton.jpg) no-repeat;
+	height: 3px;
+    margin-left: 155px;
+}
+ul{
+	list-style: none;
+}
+li{
+	display: list-item;
+    text-align: -webkit-match-parent;
+}
+.c-10 ul{
+	width: 300px;
+    height: 80px;
+}
+.c-10 ul li{
+	width: 50px;
+}
+.mark-center ul{
+	color: #6C6D61;
+    float: left;
+    height: 50px;
+    width: 720px;
+    margin-left: 90px;
+    display: inline;
+    position: absolute;
+}
+.mark-center ul li{
+	float: left;
+    height: 10px;
+    display: inline;
+    margin-top: 10px;
+    text-align: center;
+}
+.c-12 ul li{
+	width: 70px;
+}
+.c-13 ul li{
+	width: 70px;
+}
+.center-mark ul{
+	color: #6C6D61;
+    float: left;
+    height: 140px;
+    width: 720px;
+    margin-left: 100px;
+    display: inline;
+}
+.center-mark ul li{
+	float: left;
+    height: 60px;
+    width: 60px;
+    display: inline;
+    margin: 10px 0 0 10px;
+}
+.dibu{
+	padding: 30px 0;
+    overflow: hidden;
+    color: #bbb;
+}
+.dibu .dibu-1{
+	width: 1050px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.dibu1{
+	width: 330px;
+    padding-top: 10px;
+    float: left;
+}
+.dibu2{
+	width: 700px;
+    border-left: 1px solid #b2b2b2;
+    font-size: 12px;
+    padding-left: 16px;
+    line-height: 18px;
+    float: left;
+    text-align: left;
+}
+.dibu img{
+	margin-right: 10px;
+    vertical-align: middle;
+}
+.dibu .db{
+	width: 1px;
+    height: 25px;
+    border-left: 1px solid #b2b2b2;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.db1 img{
+	width: 50px;
+}
+.kss1 a{
+	width: 187px;
+    height: 43px;
+    margin-top: 86px;
+}
+.ks a{
+	cursor: pointer;
+    display: block;
+    position: relative;
+    text-indent: -9999px;
+}
+.xinshou{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/xinshou1.png) no-repeat;
+}
+.guize{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/guize1.png) no-repeat;
+	
+}
+.kss2{
+	width: 197px;
+}
+.kss3{
+	margin-top: 62px;
+    margin-left: 71px;
+}
+.kss4{
+	margin-top: 21px;
+    margin-left: 54px;
+}
+.kss5{
+	width: 60px;
+    height: 52px;
+}
+.kss6{
+	width: 90px;
+    height: 24px;
+}
+.kapai{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/kapai1.png) no-repeat;
+}
+.gaoshou{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/gaoshou1.png) no-repeat;
+}
+#subnav_xinshou{
+	margin-left: 174px;
+}
+#subnav_guize{
+	margin-left: 360px;
+}
+#subnav_kapai{
+	margin-left: 745px;
+}
+#subnav_gaoshou{
+	margin-left: 932px;
+}
+.subnav{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/sub_mune.png) no-repeat;
+	display: none;
+    position: absolute;
+    left: 0px;
+    width: 136px;
+    height: 187px;
+    margin-top: 378px;
+    padding-top: 6px;
+}
+.subnav a{
+	background:url(%E6%83%A0%E5%B7%9E%E5%93%A5/point.png) no-repeat;
+	display: block;
+    color: #E1C1A8;
+    line-height: 26px;
+    margin-left: 15px;
+    padding-left: 35px;
+}
+</style>
+</head>
+
+<body>
+<div class="a"></div>
+<div class="b">
+<div class="left"></div>
+<div class="header">
+<div class="header1">
+<a class="ys" href="../index.html" id="afs">首页</a>
+<a class="ys" href="../三国杀武将资料站/三国杀武将资料站.html">新手教学</a>
+<a class="ys" href="#">游戏资料</a>
+<a class="ys" href="#">活动专区</a>
+<a class="ys" href="#">天梯排名</a>
+<a class="ys" href="#">游戏资讯</a>
+<a class="ys" href="#">游戏下载</a>
+<a class="ys" href="#">购卡充值</a>
+<a class="ys" href="#">客服中心</a>
+<a class="ys" href="#">官方社区</a>
+</div>
+</div>
+<div class="right"></div>
+<div class="ks">
+<div class="ks1">
+<div class="kss1"><a class="xinshou" id="xinshou">新手教学</a></div>
+<div class="kss1"><a class="guize" id="guize">游戏规则</a></div>
+<div class="kss2">
+<div class="kss3"><a href="#" class="kss5">进入游戏</a></div>
+<div class="kss4"><a href="#" class="kss6">立即购买</a></div>
+</div>
+<div class="kss1"><a class="kapai" id="kapai">卡牌一览</a></div>
+<div class="kss1"><a class="gaoshou" id="gaoshou">高手进阶</a></div>
+</div>
+</div>
+</div>
+<div id="shuju">
+<div class="subnav" id="subnav_xinshou" style="display:none">
+<a href="#">什么是国战</a>
+<a href="#">真人教学视频</a>
+<a href="#">OL快速入门</a>
+</div>
+<div class="subnav" id="subnav_guize" style="display:none">
+<a href="#">准备游戏</a>
+<a href="#">进行游戏</a>
+<a href="#">角色死亡</a>
+<a href="#">胜负结算</a>
+<a href="#">暗将规则</a>
+<a href="#">珠联璧合</a>
+</div>
+<div class="subnav" id="subnav_kapai" style="display:none">
+<a href="#">武将牌</a>
+<a href="#">游戏牌</a>
+</div>
+<div class="subnav" id="subnav_gaoshou" style="display:none">
+<a href="#">国战说明书</a>
+</div>
+</div>
+<script type="text/javascript">
+    var nav = Array('xinshou', 'guize', 'kapai', 'gaoshou');
+    for(var i = 0; i < nav.length; i++) {
+      var n_div = document.getElementById(nav[i]);
+      var s_div = document.getElementById('subnav_' + nav[i]);
+      n_div.onmouseout = mclosetime;
+      n_div.onmouseover = mopen;
+      s_div.onmouseout = mclosetime;
+      s_div.onmouseover = mcancelclosetime;
+    }
+    
+    var timeout    = 200;
+    var closetimer = 0;
+    var menu = menuitem = 0;
+    function mopen() {
+      mclose();
+      mcancelclosetime();
+      
+      menu = this;
+      var class_name = menu.className;
+      menu.className = class_name + ' ' + class_name + '_hover';
+      menuitem = document.getElementById('subnav_' + menu.id);
+      menuitem.style.display = 'block';
+    }
+    function mclose() {
+      if(menu) {
+        var class_name = menu.className.split(" ");
+        menu.className = class_name[0];
+      }
+      if(menuitem) menuitem.style.display = 'none';
+    }
+    function mclosetime() {
+      closetimer = window.setTimeout(mclose, timeout);
+    }
+    function mcancelclosetime() {
+      if(closetimer) {
+        window.clearTimeout(closetimer);
+        closetimer = null;
+      }
+    }
+    document.onclick = mclose;
+  </script>
+<div class="shangshou" align="center">
+<div class="shangshou1"><img src="惠州哥/fast-to-fit.jpg" width="762" height="319" /></div>
+<div class="shangshou2">
+<div><img src="惠州哥/video-top.jpg" width="168" height="27" /></div>
+<div><img src="惠州哥/quickstart.jpg" width="160" height="140" /></div>
+<div><img style="margin:5px 0 0 3px" src="惠州哥/real-teaching.jpg" width="160" height="140" /></div>
+<div class="shangshou3"></div>
+</div>
+</div>
+<div class="c">
+<div class="mark">
+	<div class="c-1" ></div>
+	<div class="c-2" ></div>
+	<div class="c-3" ></div>
+	<div class="c-4" ></div>
+	<div class="c-5" ></div>
+</div>
+<div class="mark-left">
+	<div class="c-6" ></div>
+	<div></div>
+	<div class="c-7" ></div>
+	<div></div>
+	<div class="c-8" ></div>
+</div>
+<div class="mark-center">
+    <div class="c-9"></div>
+	<div class="c-10">
+    <ul>
+    <li><a href="#"><img src="惠州哥/1-1301301A936244.jpg" alt="桃" border="0" width="34" height="48"  /><p>桃</p></a></li>
+   <li><a href="#"><img src="惠州哥/1-1301301KU2Q5.jpg" alt="闪" border="0" width="34" height="48" /><p>闪</p></a></li>
+   <li><a href="#"><img src="惠州哥/1-1301301KK5S5.jpg" alt="酒" border="0" width="34" height="48" /><p>酒</p></a></li>
+   <li><a href="#"><img src="惠州哥/1-1301301K624C3.jpg" alt="杀" border="0" width="34" height="48" /><p>杀</p></a></li>
+   <li><a href="#"><img src="惠州哥/1-1301301K525103.jpg" alt="火杀" border="0" width="34" height="48" /><p>火杀</p></a></li>
+   <li><a href="#"><img src="惠州哥/1-1301301KF9551.jpg" alt="雷杀" border="0" width="34" height="48" />
+     <p>雷杀</p></a></li>
+    </ul>
+    </div>
+	<div class="c-11">
+    <ul>
+    <li><a href="#"><img src="惠州哥/1-1301301F101396.jpg" alt="野心家" border="0" width="34" height="48" />
+      <p>野心家</p></a></li>
+    </ul>
+    </div>
+	<div class="c-12">
+    <ul>
+    <li><a href="#">+1坐骑</a></li>
+    <li><a href="#">-1坐骑</a></li>
+    <li><a href="#">藤甲</a></li>
+    <li><a href="#">白银狮子</a></li>
+    <li><a href="#">仁王盾</a></li>
+    <li><a href="#">八卦阵</a></li>
+    <li><a href="#">麒麟弓</a></li>
+    <li><a href="#">朱雀羽扇</a></li>
+    <li><a href="#">丈八蛇矛</a></li>
+    <li><a href="#">贯石斧</a></li>
+    <li><a href="#">三尖两刃刀</a></li>
+    <li><a href="#">吴六剑</a></li>
+    <li><a href="#">寒冰剑</a></li>
+    <li><a href="#">雌雄双股剑</a></li>
+    <li><a href="#">青釭剑</a></li>
+    <li><a href="#">诸葛连弩</a></li>
+    </ul>
+    </div>
+	<div class="c-13">
+    <ul>
+    <li><a href="#">兵粮寸断</a></li>
+    <li><a href="#">乐不思蜀</a></li>
+    <li><a href="#">闪电</a></li>
+    <li><a href="#">五谷丰登</a></li>
+    <li><a href="#">桃园结义</a></li>
+    <li><a href="#">南蛮入侵</a></li>
+    <li><a href="#">万箭齐发</a></li>
+    <li><a href="#">远交近攻</a></li>
+    <li><a href="#">知己知彼</a></li>
+    <li><a href="#">以逸待劳</a></li>
+    <li><a href="#">火攻</a></li>
+    <li><a href="#">铁索连环</a></li>
+    <li><a href="#">无懈可击国</a></li>
+    <li><a href="#">无懈可击</a></li>
+    <li><a href="#">借刀杀人</a></li>
+    <li><a href="#">顺手牵羊</a></li>
+    <li><a href="#">过河拆桥</a></li>
+    <li><a href="#">无中生有</a></li>
+    <li><a href="#">决斗</a></li>
+    </ul>
+    </div>
+</div>
+<div class="mark-right">
+	<div class="c-14"></div>
+	<div class="c-15"></div>
+	<div class="c-16"></div>
+</div>
+</div>
+<div class="mark-botton"></div>
+<div class="d">
+<div class="forces-mark">
+<div class="wei"></div>
+<div class="shu"></div>
+<div class="wu"></div>
+<div class="qun"></div>
+</div>
+<div class="left-mark">
+<div class="left1"></div>
+<div class="left2"></div>
+<div class="left3"></div>
+</div>
+<div class="center-mark">
+<div class="center-mark1"></div>
+<div class="center-mark2">
+<ul>
+<li><a href="#"><img src="惠州哥/1-1301301K915419.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301KG5252.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301K942139.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301KJI35.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301KA61G.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301KQ0616.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301KR94L.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301KT5C8.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301P0251N.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301P00RK.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301P04E04.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301P20b10.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301P104E8.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301P124606.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-1301301P140145.jpg" width="61" height="61" /></a></li>
+</ul>
+</div>
+<div class="center-mark3">
+<ul>
+<li><a href="#"><img src="惠州哥/1-130131094H4230.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-130131094344R0.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-130131094239450.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="惠州哥/1-130131094326144.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131093IE36.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131093Q0361.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131093R4423.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131093Z2Z4.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-13013109355EH.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-13013109404IX.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131094219A8.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131093613925.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131093633562.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131093922434.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131094153113.jpg" width="61" height="61" /></a></li>
+</ul>
+</div>
+<div class="center-mark4">
+<ul>
+<li><a href="#"><img src="三国杀国战_files/1-130131094K0614.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131094Q0H4.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-13013109512W59.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-13013109524AK.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131094945D0.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095025O4.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095053B4.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095214T9.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095301D3.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095321R4.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095006409.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095110291.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095143252.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095159492.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131095230391.jpg" width="61" height="61" /></a></li>
+</ul>
+</div>
+<div class="center-mark5">
+<ul>
+<li><a href="#"><img src="三国杀国战_files/1-1301301J911W3.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301JF0P6.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301JSUW.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301JU3342.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K01c04.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K03U03.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K05La.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K15Q91.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K22L93.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K1135E.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K1313U.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K2591C.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301301K242936.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-1301311050391a.jpg" width="61" height="61" /></a></li>
+<li><a href="#"><img src="三国杀国战_files/1-130131104955206.jpg" width="61" height="61" /></a></li>
+</ul>
+</div>
+</div>
+<div class="right-mark">
+<div class="right1"></div>
+<div class="right2"></div>
+<div class="right3"></div>
+</div>
+</div>
+<div class="w"></div>
+<div class="dibu">
+<div class="dibu-1">
+  	<div class="dibu1">
+    <a href="#"><img src="三国杀国战_files/youka.png" width="162" height="70" /></a>
+    <span class="db"></span>
+    <a href="#"><img src="三国杀国战_files/jing.png" width="43" height="42" /></a>
+    <span class="db1"><a><img src="三国杀国战_files/i_lo2.gif" width="65" height="70" /></a></span>
+    </div>
+	<div class="dibu2">
+    抵制不良游戏<span>|</span>拒绝盗版游戏<span>|</span>注意自我保护<span>|</span>谨防受骗上当<span>|							</span>适度游戏益脑<span>|</span>沉迷游戏伤身<span>|</span>合理安排时间<span>|</span>享受健康生活<br 	/>网络文化经营许可证 浙网文[2016]0251-121号&nbsp;&nbsp;&nbsp;文网游备字[2010]C-CBG009号	&nbsp;&nbsp;&nbsp;游戏批准文号 科技与数字【2010】284号<br />增值电信业务经营许可证号码 [浙B2-20160108]&nbsp;&nbsp;&nbsp;杭州游卡网络技术有限公司　版权所有
+</div>
+</div>
+</div>
+</body>
+</html>
